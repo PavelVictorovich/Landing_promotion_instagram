@@ -1,0 +1,1621 @@
+@import "vars.sass"
+@import "carousel"
+@import "buttons"
+@import "icons"
+@import "controls"
+@import "navbar"
+
+*::-webkit-input-placeholder
+  color: #555
+  opacity: 1
+
+*:-moz-placeholder
+  color: #555
+  opacity: 1
+
+*::-moz-placeholder
+  color: #555
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #555
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #555
+
+body input:required:valid,
+body textarea:required:valid
+  color: #555
+
+body
+  font-family: "SFUIText", Arial, sans-serif
+  font-size: 16px
+  color: #555
+
+img
+  width: 100%
+  max-width: 100%
+
+ul
+  list-style: none
+
+.title
+  color: #555
+  text-align: center
+
+.carousel-control.left
+  background: none
+
+.carousel-control.right
+  background: none
+
+.carousel-indicators
+  display: none
+
+.footer
+  background-color: #222
+
+@media only (min-width: 320px) and (max-width: 479px)
+  .header-title
+    margin-top: 35px
+    margin-bottom: -9px
+  .header-subtitle
+    margin-bottom: 29px
+  .why-title
+    margin-top: 50px
+  .why-list
+    margin-top: 50px
+    margin-left: -40px
+    .description-sub-text
+      margin-bottom: 12px
+  .title-h1
+    font-size: 17px
+    font-family: "SFUIText-Bold", Arial, sans-serif
+  .subtitle-h1
+    font-family: "SFUIText-RegularG1", Arial, sans-serif
+    font-size: 11px
+  .title-h2
+    font-family: "SFUIText-Bold", Arial, sans-serif
+    font-size: 22px
+  .title-h3
+    font-size: 40px
+    font-family: "SFUIText-Bold", Arial, sans-serif
+    color: #0084FF
+  .title-h4
+    font-size: 17px
+    font-family: "SFUIText-Medium", Arial, sans-serif
+    color: #0084FF
+  .title-default
+    color: #fff
+    font-family: "SFUIText-Medium", Arial, sans-serif
+  .sub-title
+    font-family: "SFUIText-Medium", Arial, sans-serif
+    font-size: 22px
+    color: #0084FF
+  .video-info-text
+    font-family: "SFUIText-Light", Arial, sans-serif
+    font-size: 18px
+  .description-text
+    font-family: "SFUIText-Regular", Arial, sans-serif
+    font-size: 12px
+  .description-sub-text
+    font-family: "SFUIText-RegularG1", Arial, sans-serif
+    font-size: 14px
+  .description-important-info, .description-link
+    font-family: "SFUIText-Bold", Arial, sans-serif
+    font-size: 18px
+  .description-link
+    color: #0084FF
+  .info-text
+    font-family: "SFUIText-Medium", Arial, sans-serif
+    font-size: 24px
+  .share-link
+    font-family: "SFUIText-Regular", Arial, sans-serif
+    font-size: 18px
+    color: #555
+    &:hover
+      color: #0084FF
+  .description-block
+    display: none
+  .description-block-xs
+    display: block
+  .holder-after-before
+    .col-xs-5
+      padding: 10px 87px 0 0
+    .col-xs-7
+      padding: 0 110px 0 0
+    *
+      margin: 0
+      line-height: 1.1
+  .text-after
+    .title-h4
+      width: 200%
+    .description-text
+      width: 200%
+  .text-before
+    .title-h4
+      display: none
+    .description-text
+      display: none
+  .why-text
+    width: 228px
+    margin: 15px 0 0 90px
+  .submit-title
+    margin-top: 60px
+    margin-bottom: -50px
+    padding: 0
+    .title
+      color: #fff
+  .submit-form
+    padding: 45px 0
+    margin-top: 37px
+    .btn
+      margin-top: 21px
+      height: 67px
+      margin-bottom: 121px
+      font-size: 24px
+      line-height: 65px
+  /*Lists*/
+  .section-results
+    background: #0084FF url("../img/content/img-bg-1.jpg") 0 0 no-repeat
+    background-size: cover
+    margin-top: 30px
+    margin-bottom: 56px
+  .holder-block
+    display: none
+  .holder-block-xs
+    display: block
+  .info-block
+    padding: 0 40px
+    .info-text
+      text-align: center
+      margin-top: 17px
+  .scheme-holder
+    .title
+      margin-top: 40px
+      margin-bottom: 9px
+    margin-bottom: 154px
+  .scheme-list
+    display: block
+    list-style: none
+    overflow: hidden
+    margin-top: 19px
+    margin-bottom: 0
+    padding-left: 30px
+    padding-bottom: 5px
+    counter-reset: numList
+    li
+      display: block
+      position: relative
+      counter-increment: numList
+      &:before
+        content: counter(numList)
+        float: left
+        position: absolute
+        left: -16px
+        font: bold 24px sans-serif
+        text-align: center
+        color: #fff
+        line-height: 30px
+        width: 30px
+        height: 30px
+        background: #0084FF
+        -moz-border-radius: 999px
+        border-radius: 999px
+  .scheme-list-item ~ .scheme-list-item
+    margin-top: 13px
+  .scheme-list-item
+    font-family: "SFUIText-RegularG1", Arial, sans-serif
+    font-size: 20px
+  .price-holder
+    .title
+      margin-bottom: 47px
+    margin-bottom: 39px
+  .block-price
+    padding: 0 95px
+    .icon-plane
+      margin-bottom: 19px
+    .icon-plane2
+      margin: 6px 8px 28px
+    .icon-plane3
+      margin: 4px 0 21px 4px
+    .price-title-h4
+      margin-bottom: -4px
+      margin-left: 0
+    .price-title-h5
+      margin-left: -12px
+      margin-bottom: 15px
+    .price-title-h6
+      min-width: 165px
+      margin-left: -52px
+      margin-bottom: 79px
+    .price-info
+      padding: 0 65px
+      min-width: 415px
+      margin-left: -165px
+      margin-top: -66px
+      line-height: 20px
+      li
+        font-size: 11px
+        .btn
+          width: 180px
+    .btn
+      margin-top: 32px
+      min-width: 260px
+      margin-left: -44px
+      min-height: 75px
+      font-family: "SFUIText-Bold", Arial, sans-serif
+      font-size: 24px
+    .carousel-inner
+      .item
+        display: block
+  .price-title-h4
+    font-family: "SFUIText-Regular", Arial, sans-serif
+    font-size: 18px
+    color: #959595
+    text-align: center
+  .price-title-h5
+    font-family: "SFUIText-Medium", Arial, sans-serif
+    font-size: 24px
+    color: #0084FF
+    text-align: center
+  .price-title-h6
+    font-family: "SFUIText-Bold", Arial, sans-serif
+    font-size: 30px
+    color: #0084FF
+    text-align: center
+  .price-info
+    li
+      font-family: "SFUIText-RegularG1", Arial, sans-serif
+      font-size: 18px
+      color: #959595
+      &:before
+        content: "-"
+        position: relative
+        left: -5px
+      &:last-child
+        &:before
+          content: " "
+    .btn
+      margin-left: auto
+      line-height: 68px
+  .video-holder
+    padding: 0 35px
+    margin-bottom: 20px
+    .title
+      margin-top: 70px
+      margin-bottom: 54px
+  .video-info
+    .sub-title
+      margin-top: 6px
+      margin-bottom: 0
+    p
+      margin-bottom: 13px
+    .col-xs-12
+      margin-bottom: 3px
+
+  .form-holder
+    .title
+      margin: 103px 0 17px
+  .form-footer
+    padding: 0
+    .btn-holder
+      .btn
+        font-size: 24px
+        height: 79px
+        line-height: 78px
+    .form-group-footer
+      input
+        background-color: #555
+        border: none
+      margin-bottom: 15px
+  .form-title
+    font-family: "SFUIText-Bold", Arial, sans-serif
+    font-size: 36px
+    color: #fff
+  .title-contact
+    float: right
+    margin: -40px 0 0 0
+    color: #fff
+    font-size: 30px
+    font-family: "SFUIText-Bold", Arial, sans-serif
+  .contact-data
+    float: right
+    margin: -4px 0 -6px 0
+    .icon
+      margin: 5px
+    .contact
+      margin: 5px
+    .contact-info
+      margin: 5px
+  .contact-data
+    .icon
+      margin: 0 0 15px 0
+  .contact
+    color: #555
+    font-size: 17px
+    font-family: "SFUIText-Bold", Arial, sans-serif
+    margin-left: 10px
+  .contact-info
+    color: #fff
+    font-size: 17px
+    font-family: "SFUIText-Regular", Arial, sans-serif
+  .contacts-holder
+    border-bottom: 5px solid #0084FF
+    padding-bottom: 49px
+  .contact-holder
+    margin: 14% 0 0 0
+  .contact-info-holder
+    padding: 25px 9px 137px 0
+  .logo-footer
+    margin-top: 18px
+  .info-list
+    font-size: 12px
+    line-height: 25px
+  .social-holder
+    margin-top: 0
+    padding: 0
+  .social-list
+    margin-left: 0
+  .social-item
+    ~ .social-item
+      margin-left: 0
+  .col-xxs-12
+    width: 100%
+
+@media only (min-width: 480px) and (max-width: 767px)
+  .header-title
+    margin-top: 35px
+    margin-bottom: -9px
+  .header-subtitle
+    margin-bottom: 29px
+    padding: 0 34px
+  .why-title
+    margin-top: 50px
+  .why-list
+    margin-top: 50px
+    margin-left: -40px
+    .description-sub-text
+      margin-bottom: 12px
+  .title-h1
+    font-size: 25px
+    font-family: "SFUIText-Bold", Arial, sans-serif
+  .subtitle-h1
+    font-family: "SFUIText-RegularG1", Arial, sans-serif
+    font-size: 17px
+  .title-h2
+    font-family: "SFUIText-Bold", Arial, sans-serif
+    font-size: 22px
+  .title-h3
+    font-size: 40px
+    font-family: "SFUIText-Bold", Arial, sans-serif
+    color: #0084FF
+  .title-h4
+    font-size: 17px
+    font-family: "SFUIText-Medium", Arial, sans-serif
+    color: #0084FF
+  .title-default
+    color: #fff
+    font-family: "SFUIText-Medium", Arial, sans-serif
+  .sub-title
+    font-family: "SFUIText-Medium", Arial, sans-serif
+    font-size: 22px
+    color: #0084FF
+  .video-info-text
+    font-family: "SFUIText-Light", Arial, sans-serif
+    font-size: 18px
+  .description-text
+    font-family: "SFUIText-Regular", Arial, sans-serif
+    font-size: 12px
+  .description-sub-text
+    font-family: "SFUIText-RegularG1", Arial, sans-serif
+    font-size: 14px
+  .description-important-info, .description-link
+    font-family: "SFUIText-Bold", Arial, sans-serif
+    font-size: 18px
+  .description-link
+    color: #0084FF
+  .info-text
+    font-family: "SFUIText-Medium", Arial, sans-serif
+    font-size: 24px
+  .share-link
+    font-family: "SFUIText-Regular", Arial, sans-serif
+    font-size: 18px
+    color: #555
+    &:hover
+      color: #0084FF
+  .description-block
+    display: none
+  .description-block-xs
+    display: block
+  .holder-after-before
+    .col-xs-5
+      padding: 10px 87px 0 0
+    .col-xs-7
+      padding: 0 110px 0 0
+    *
+      margin: 0
+      line-height: 1.1
+  .why-text
+    width: 228px
+    margin: 15px 0 0 90px
+  .submit-title
+    margin-top: 60px
+    margin-bottom: -50px
+    padding: 0
+    .title
+      color: #fff
+  .submit-form
+    padding: 45px 0
+    margin-top: 37px
+    .btn
+      margin-top: 21px
+      height: 67px
+      margin-bottom: 121px
+      font-size: 24px
+      line-height: 65px
+  /*Lists*/
+  .section-results
+    background: #0084FF url("../img/content/img-bg-1.jpg") 0 0 no-repeat
+    background-size: cover
+    margin-top: 30px
+    margin-bottom: 56px
+  .holder-block
+    display: none
+  .holder-block-xs
+    display: block
+  .info-block
+    padding: 0 75px
+    .icon
+      margin-left: 20%
+    .info-text
+      text-align: center
+      margin-top: 17px
+  .scheme-holder
+    .title
+      margin-top: 40px
+      margin-bottom: 9px
+    margin-bottom: 154px
+  .scheme-list
+    display: block
+    list-style: none
+    overflow: hidden
+    margin-top: 19px
+    margin-bottom: 0
+    padding-left: 30px
+    padding-bottom: 5px
+    counter-reset: numList
+    li
+      display: block
+      position: relative
+      counter-increment: numList
+      &:before
+        content: counter(numList)
+        float: left
+        position: absolute
+        left: -16px
+        font: bold 24px sans-serif
+        text-align: center
+        color: #fff
+        line-height: 30px
+        width: 30px
+        height: 30px
+        background: #0084FF
+        -moz-border-radius: 999px
+        border-radius: 999px
+  .scheme-list-item ~ .scheme-list-item
+    margin-top: 13px
+  .scheme-list-item
+    font-family: "SFUIText-RegularG1", Arial, sans-serif
+    font-size: 20px
+  .price-holder
+    .title
+      margin-bottom: 47px
+    margin-bottom: 39px
+  .block-price
+    padding: 0 180px
+    .icon-plane
+      margin-bottom: 19px
+    .icon-plane2
+      margin: 6px 8px 28px
+    .icon-plane3
+      margin: 4px 0 21px 4px
+    .price-title-h4
+      margin-bottom: -4px
+      margin-left: 0
+    .price-title-h5
+      margin-left: -12px
+      margin-bottom: 15px
+    .price-title-h6
+      min-width: 165px
+      margin-left: -52px
+      margin-bottom: 79px
+    .price-info
+      padding: 0 16px
+      min-width: 415px
+      margin-left: -165px
+      margin-top: -66px
+      line-height: 20px
+    .btn
+      margin-top: 32px
+      min-width: 370px
+      margin-left: -44px
+      min-height: 75px
+      font-family: "SFUIText-Bold", Arial, sans-serif
+      font-size: 24px
+    .carousel-inner
+      .item
+        display: block
+  .price-title-h4
+    font-family: "SFUIText-Regular", Arial, sans-serif
+    font-size: 18px
+    color: #959595
+    text-align: center
+  .price-title-h5
+    font-family: "SFUIText-Medium", Arial, sans-serif
+    font-size: 24px
+    color: #0084FF
+    text-align: center
+  .price-title-h6
+    font-family: "SFUIText-Bold", Arial, sans-serif
+    font-size: 30px
+    color: #0084FF
+    text-align: center
+  .price-info
+    li
+      font-family: "SFUIText-RegularG1", Arial, sans-serif
+      font-size: 18px
+      color: #959595
+      &:before
+        content: "-"
+        position: relative
+        left: -5px
+      &:last-child
+        &:before
+          content: " "
+    .btn
+      margin-left: auto
+      line-height: 68px
+  .video-holder
+    padding: 0 35px
+    margin-bottom: 20px
+    .title
+      margin-top: 70px
+      margin-bottom: 54px
+  .video-info
+    .sub-title
+      margin-top: 6px
+      margin-bottom: 0
+    p
+      margin-bottom: 13px
+    .col-xs-12
+      margin-bottom: 3px
+
+  .form-holder
+    .title
+      margin: 103px 0 17px
+  .form-footer
+    padding: 0
+    .btn-holder
+      .btn
+        font-size: 24px
+        height: 79px
+        line-height: 78px
+    .form-group-footer
+      input
+        background-color: #555
+        border: none
+      margin-bottom: 15px
+  .form-title
+    font-family: "SFUIText-Bold", Arial, sans-serif
+    font-size: 36px
+    color: #fff
+  .title-contact
+    float: right
+    margin: -40px 0 0 0
+    color: #fff
+    font-size: 30px
+    font-family: "SFUIText-Bold", Arial, sans-serif
+  .contact-data
+    float: right
+    margin: -4px 0 -6px 0
+    .icon
+      margin: 5px
+    .contact
+      margin: 5px
+    .contact-info
+      margin: 5px
+  .contact-data
+    .icon
+      margin: 0 0 15px 0
+  .contact
+    color: #555
+    font-size: 28px
+    font-family: "SFUIText-Bold", Arial, sans-serif
+    margin-left: 10px
+  .contact-info
+    color: #fff
+    font-size: 28px
+    font-family: "SFUIText-Regular", Arial, sans-serif
+  .contacts-holder
+    border-bottom: 5px solid #0084FF
+    padding-bottom: 49px
+  .contact-holder
+    margin: 14% 0 0 0
+  .contact-info-holder
+    padding: 25px 9px 137px 0
+  .logo-footer
+    margin-top: 18px
+  .info-list
+    font-size: 12px
+    line-height: 25px
+  .social-holder
+    margin-top: 0
+    padding: 0
+  .social-list
+    margin-left: 0
+  .social-item
+    ~ .social-item
+      margin-left: 0
+
+@media only (min-width: 768px) and (max-width: 991px)
+  .holder-block-xs
+    display: none
+  .description-block-xs
+    display: none
+  .header-title
+    margin-top: 35px
+    margin-bottom: -9px
+  .header-subtitle
+    margin-bottom: 29px
+    padding: 0 34px
+  .why-title
+    margin-top: 92px
+    margin-bottom: 321px
+  .why-list
+    margin-top: 50px
+    margin-left: -40px
+    .description-sub-text
+      margin-bottom: 12px
+  .title-h1
+    font-size: 35px
+    font-family: "SFUIText-Bold", Arial, sans-serif
+  .subtitle-h1
+    font-family: "SFUIText-RegularG1", Arial, sans-serif
+    font-size: 25px
+  .title-h2
+    font-family: "SFUIText-Bold", Arial, sans-serif
+    font-size: 28px
+  .title-h3
+    font-size: 72px
+    font-family: "SFUIText-Bold", Arial, sans-serif
+    color: #0084FF
+  .title-h4
+    font-size: 24px
+    font-family: "SFUIText-Medium", Arial, sans-serif
+    color: #0084FF
+  .title-default
+    color: #fff
+    font-family: "SFUIText-Medium", Arial, sans-serif
+  .sub-title
+    font-family: "SFUIText-Medium", Arial, sans-serif
+    font-size: 22px
+    color: #0084FF
+  .video-info-text
+    font-family: "SFUIText-Light", Arial, sans-serif
+    font-size: 18px
+  .description-text
+    font-family: "SFUIText-Regular", Arial, sans-serif
+    font-size: 18px
+  .description-sub-text
+    font-family: "SFUIText-RegularG1", Arial, sans-serif
+    font-size: 14px
+  .description-important-info, .description-link
+    font-family: "SFUIText-Bold", Arial, sans-serif
+    font-size: 18px
+  .description-link
+    color: #0084FF
+  .info-text
+    font-family: "SFUIText-Medium", Arial, sans-serif
+    font-size: 24px
+  .share-link
+    font-family: "SFUIText-Regular", Arial, sans-serif
+    font-size: 18px
+    color: #555
+    &:hover
+      color: #0084FF
+  .description-block
+    .title
+      margin-bottom: 38px
+      margin-top: 48px
+  .holder-after
+    .col-sm-5
+      padding: 15px 34px 0 100px
+    .col-sm-7
+      padding: 0 110px 0 0
+    *
+      margin: 0
+      line-height: 1.1
+  .holder-before
+    margin-top: 86px
+    .col-sm-5
+      padding: 14px 100px 0 34px
+    .col-sm-7
+      padding: 1px 15px 0 97px
+      *
+        margin: 0
+      * ~ *
+        margin-top: 0
+      line-height: 1.1
+  .why-text
+    width: 228px
+    margin: 15px 0 0 90px
+  .submit-title
+    margin-top: 60px
+    margin-bottom: -50px
+    padding: 0
+    .title
+      color: #fff
+  .submit-form
+    padding: 45px 0
+    margin-top: 37px
+    .btn
+      margin-top: 21px
+      height: 67px
+      margin-bottom: 121px
+      font-size: 24px
+      line-height: 65px
+  /*Lists*/
+  .section-results
+    background: #0084FF url("../img/content/img-bg-1.jpg") 0 0 no-repeat
+    background-size: cover
+    margin-top: 30px
+    margin-bottom: 56px
+  .holder-block
+    padding: 0
+    margin-top: 20px
+    .title
+      padding: 0 240px
+      margin-bottom: 52px
+    .info-block ~ .info-block
+      margin-left: 59px
+  .info-block
+    margin-left: 25px
+    width: 202px
+    margin-bottom: 146px
+    .info-text
+      text-align: center
+      width: 280px
+      margin-top: 17px
+      margin-left: -50px
+  .scheme-holder
+    .title
+      margin-top: 40px
+      margin-bottom: 9px
+    margin-bottom: 154px
+  .scheme-list
+    display: block
+    list-style: none
+    overflow: hidden
+    margin-top: 19px
+    margin-bottom: 0
+    padding-left: 30px
+    padding-bottom: 5px
+    counter-reset: numList
+    li
+      display: block
+      position: relative
+      counter-increment: numList
+      &:before
+        content: counter(numList)
+        float: left
+        position: absolute
+        left: -16px
+        font: bold 24px sans-serif
+        text-align: center
+        color: #fff
+        line-height: 30px
+        width: 30px
+        height: 30px
+        background: #0084FF
+        -moz-border-radius: 999px
+        border-radius: 999px
+  .scheme-list-item ~ .scheme-list-item
+    margin-top: 13px
+  .scheme-list-item
+    font-family: "SFUIText-RegularG1", Arial, sans-serif
+    font-size: 20px
+  .price-holder
+    .title
+      margin-bottom: 47px
+    margin-bottom: 39px
+  .block-price
+    padding-left: 295px
+    margin-left: -149px
+    ~ .block-price
+      margin-left: 10px
+    .icon-plane
+      margin-bottom: 19px
+    .icon-plane2
+      margin: 6px 8px 28px
+    .icon-plane3
+      margin: 4px 0 21px 4px
+    .price-title-h4
+      margin-bottom: -4px
+      margin-left: 0
+    .price-title-h5
+      margin-left: -12px
+      margin-bottom: 15px
+    .price-title-h6
+      min-width: 165px
+      margin-left: -52px
+      margin-bottom: 79px
+    .price-info
+      padding: 0 16px
+      min-width: 415px
+      margin-left: -165px
+      margin-top: -66px
+      line-height: 20px
+    .btn
+      margin-top: 32px
+      min-width: 370px
+      margin-left: -44px
+      min-height: 75px
+      font-family: "SFUIText-Bold", Arial, sans-serif
+      font-size: 24px
+    .carousel-inner
+      .item
+        display: block
+  .price-title-h4
+    font-family: "SFUIText-Regular", Arial, sans-serif
+    font-size: 18px
+    color: #959595
+    text-align: center
+  .price-title-h5
+    font-family: "SFUIText-Medium", Arial, sans-serif
+    font-size: 24px
+    color: #0084FF
+    text-align: center
+  .price-title-h6
+    font-family: "SFUIText-Bold", Arial, sans-serif
+    font-size: 30px
+    color: #0084FF
+    text-align: center
+  .price-info
+    li
+      font-family: "SFUIText-RegularG1", Arial, sans-serif
+      font-size: 18px
+      color: #959595
+      &:before
+        content: "-"
+        position: relative
+        left: -5px
+      &:last-child
+        &:before
+          content: " "
+    .btn
+      margin-left: auto
+      line-height: 68px
+  .video-holder
+    padding: 0 35px
+    margin-bottom: 20px
+    .title
+      margin-top: 70px
+      margin-bottom: 54px
+  .video-info
+    .sub-title
+      margin-top: 6px
+      margin-bottom: 0
+    p
+      margin-bottom: 13px
+    .col-sm-12
+      margin-bottom: 3px
+
+  .form-holder
+    .title
+      margin: 103px 0 17px
+  .form-footer
+    padding: 0
+    .btn-holder
+      .btn
+        font-size: 24px
+        height: 79px
+        line-height: 78px
+    .form-group-footer
+      input
+        background-color: #555
+        border: none
+      margin-bottom: 15px
+  .form-title
+    font-family: "SFUIText-Bold", Arial, sans-serif
+    font-size: 36px
+    color: #fff
+  .title-contact
+    float: right
+    margin: -40px 0 0 0
+    color: #fff
+    font-size: 30px
+    font-family: "SFUIText-Bold", Arial, sans-serif
+  .contact-data
+    float: right
+    margin: -4px 0 -6px 0
+    .icon
+      margin: 5px
+    .contact
+      margin: 5px
+    .contact-info
+      margin: 5px
+  .contact-data
+    .icon
+      margin: 0 0 15px 0
+  .contact
+    color: #555
+    font-size: 28px
+    font-family: "SFUIText-Bold", Arial, sans-serif
+    margin-left: 10px
+  .contact-info
+    color: #fff
+    font-size: 28px
+    font-family: "SFUIText-Regular", Arial, sans-serif
+  .contacts-holder
+    border-bottom: 5px solid #0084FF
+    padding-bottom: 49px
+  .contact-holder
+    margin: 14% 0 0 0
+  .contact-info-holder
+    padding: 25px 9px 137px 0
+  .logo-footer
+    margin-top: 18px
+  .social-holder
+    margin-top: 0
+    padding: 0
+  .social-list
+    margin-left: -20px
+  .social-item
+    padding: 0
+    max-width: 55px
+    ~ .social-item
+      margin-left: 20px
+
+@media only (min-width: 992px) and (max-width: 1199px)
+  .holder-block-xs
+    display: none
+  .description-block-xs
+    display: none
+  .header-title
+    margin-top: 60px
+    margin-bottom: -9px
+  .header-subtitle
+    margin-bottom: 29px
+    padding: 0 122px
+  .why-title
+    margin-top: 92px
+    margin-bottom: 321px
+  .why-list
+    margin-top: 50px
+    margin-left: -40px
+  .title-h1
+    font-size: 47px
+    font-family: "SFUIText-Bold", Arial, sans-serif
+  .subtitle-h1
+    font-family: "SFUIText-RegularG1", Arial, sans-serif
+    font-size: 25px
+  .title-h2
+    font-family: "SFUIText-Bold", Arial, sans-serif
+    font-size: 28px
+  .title-h3
+    font-size: 72px
+    font-family: "SFUIText-Bold", Arial, sans-serif
+    color: #0084FF
+  .title-h4
+    font-size: 24px
+    font-family: "SFUIText-Medium", Arial, sans-serif
+    color: #0084FF
+  .title-default
+    color: #fff
+    font-family: "SFUIText-Medium", Arial, sans-serif
+  .sub-title
+    font-family: "SFUIText-Medium", Arial, sans-serif
+    font-size: 22px
+    color: #0084FF
+  .video-info-text
+    font-family: "SFUIText-Light", Arial, sans-serif
+    font-size: 18px
+  .description-text
+    font-family: "SFUIText-Regular", Arial, sans-serif
+    font-size: 18px
+  .description-sub-text
+    font-family: "SFUIText-RegularG1", Arial, sans-serif
+    font-size: 18px
+  .description-important-info, .description-link
+    font-family: "SFUIText-Bold", Arial, sans-serif
+    font-size: 18px
+  .description-link
+    color: #0084FF
+  .info-text
+    font-family: "SFUIText-Medium", Arial, sans-serif
+    font-size: 24px
+  .share-link
+    font-family: "SFUIText-Regular", Arial, sans-serif
+    font-size: 18px
+    color: #555
+    &:hover
+      color: #0084FF
+  .description-block
+    .title
+      margin-bottom: 38px
+      margin-top: 48px
+  .holder-after
+    .col-md-5
+      padding: 15px 34px 0 100px
+    .col-md-7
+      padding: 0 110px 0 0
+    *
+      margin: 0
+      line-height: 1.1
+  .holder-before
+    margin-top: 86px
+    .col-md-5
+      padding: 14px 100px 0 34px
+    .col-md-7
+      padding: 1px 15px 0 97px
+      *
+        margin: 0
+      * ~ *
+        margin-top: 0
+      line-height: 1.1
+  .why-text
+    width: 228px
+    margin-left: 95px
+  .submit-title
+    margin-top: 60px
+    margin-bottom: -50px
+    padding: 0
+    .title
+      color: #fff
+  .submit-form
+    padding: 45px 0
+    margin-top: 37px
+    .btn
+      margin-top: 21px
+      height: 67px
+      margin-bottom: 121px
+      font-size: 24px
+      line-height: 65px
+  /*Lists*/
+  .section-results
+    background: #0084FF url("../img/content/img-bg-1.jpg") 0 0 no-repeat
+    background-size: cover
+    margin-top: 30px
+    margin-bottom: 56px
+  .holder-block
+    padding: 0
+    margin-top: 20px
+    .title
+      padding: 0 240px
+      margin-bottom: 52px
+    .info-block ~ .info-block
+      margin-left: 130px
+  .info-block
+    margin-left: 45px
+    width: 202px
+    margin-bottom: 146px
+    .info-text
+      text-align: center
+      width: 280px
+      margin-top: 17px
+      margin-left: -50px
+  .scheme-holder
+    .title
+      margin-top: 40px
+      margin-bottom: 9px
+    margin-bottom: 154px
+  .scheme-list
+    display: block
+    list-style: none
+    overflow: hidden
+    margin-top: 19px
+    margin-bottom: 0
+    padding-left: 126px
+    padding-bottom: 5px
+    counter-reset: numList
+    li
+      display: block
+      position: relative
+      counter-increment: numList
+      &:before
+        content: counter(numList)
+        float: left
+        position: absolute
+        left: -26px
+        font: bold 24px sans-serif
+        text-align: center
+        color: #fff
+        line-height: 40px
+        width: 40px
+        height: 40px
+        background: #0084FF
+        -moz-border-radius: 999px
+        border-radius: 999px
+  .scheme-list-item ~ .scheme-list-item
+    margin-top: 13px
+  .scheme-list-item
+    font-family: "SFUIText-RegularG1", Arial, sans-serif
+    font-size: 24px
+  .price-holder
+    .title
+      margin-bottom: 47px
+    margin-bottom: 39px
+  .block-price
+    padding-left: 295px
+    margin-left: -149px
+    ~ .block-price
+      margin-left: 10px
+    .icon-plane
+      margin-bottom: 19px
+    .icon-plane2
+      margin: 6px 8px 28px
+    .icon-plane3
+      margin: 4px 0 21px 4px
+    .price-title-h4
+      margin-bottom: -4px
+      margin-left: 0
+    .price-title-h5
+      margin-left: -12px
+      margin-bottom: 15px
+    .price-title-h6
+      min-width: 165px
+      margin-left: -52px
+      margin-bottom: 79px
+    .price-info
+      padding: 0 16px
+      min-width: 415px
+      margin-left: -165px
+      margin-top: -66px
+      line-height: 20px
+    .btn
+      margin-top: 32px
+      min-width: 370px
+      margin-left: -44px
+      min-height: 75px
+      font-family: "SFUIText-Bold", Arial, sans-serif
+      font-size: 24px
+    .carousel-inner
+      .item
+        display: block
+  .price-title-h4
+    font-family: "SFUIText-Regular", Arial, sans-serif
+    font-size: 18px
+    color: #959595
+    text-align: center
+  .price-title-h5
+    font-family: "SFUIText-Medium", Arial, sans-serif
+    font-size: 24px
+    color: #0084FF
+    text-align: center
+  .price-title-h6
+    font-family: "SFUIText-Bold", Arial, sans-serif
+    font-size: 30px
+    color: #0084FF
+    text-align: center
+  .price-info
+    li
+      font-family: "SFUIText-RegularG1", Arial, sans-serif
+      font-size: 18px
+      color: #959595
+      &:before
+        content: "-"
+        position: relative
+        left: -5px
+      &:last-child
+        &:before
+          content: " "
+    .btn
+      margin-left: auto
+      line-height: 68px
+  .video-holder
+    padding: 0 100px
+    margin-bottom: 20px
+    .title
+      margin-top: 70px
+      margin-bottom: 54px
+  .video-info
+    .sub-title
+      margin-top: 6px
+      margin-bottom: 0
+    p
+      margin-bottom: 13px
+    .col-md-12
+      margin-bottom: 3px
+
+  .form-holder
+    .title
+      margin: 103px 0 17px
+  .form-footer
+    padding: 0
+    .btn-holder
+      .btn
+        font-size: 24px
+        height: 79px
+        line-height: 78px
+    .form-group-footer
+      input
+        background-color: #555
+        border: none
+      margin-bottom: 15px
+  .form-title
+    font-family: "SFUIText-Bold", Arial, sans-serif
+    font-size: 36px
+    color: #fff
+  .title-contact
+    float: left
+    margin: 45px 300px 0 0
+    color: #fff
+    font-size: 30px
+    font-family: "SFUIText-Bold", Arial, sans-serif
+  .contact-data
+    float: left
+    margin: -2px 0 0 4px
+    .icon
+      margin: 5px
+    .contact
+      margin: 5px
+    .contact-info
+      margin: 5px
+  .contact-data
+    .icon
+      margin: 0 0 15px 0
+  .contact
+    color: #555
+    font-size: 28px
+    font-family: "SFUIText-Bold", Arial, sans-serif
+    margin-left: 10px
+  .contact-info
+    color: #fff
+    font-size: 28px
+    font-family: "SFUIText-Regular", Arial, sans-serif
+  .contacts-holder
+    border-bottom: 5px solid #0084FF
+    padding-bottom: 49px
+  .contact-holder
+    margin: 14% 0 0 0
+  .contact-info-holder
+    padding: 25px 9px 137px 0
+  .logo-footer
+    margin-top: 22px
+  .social-holder
+    margin-top: 19px
+    padding: 0 0 0 14px
+  .social-list
+    margin-left: 0
+  .social-item
+    padding: 0
+    max-width: 55px
+    ~ .social-item
+      margin-left: 30px
+
+@media (min-width: 1200px)
+  .holder-block-xs
+    display: none
+  .description-block-xs
+    display: none
+  .header-title
+    margin-top: 60px
+    margin-bottom: -9px
+  .header-subtitle
+    margin-bottom: 29px
+    padding: 0 122px
+  .why-title
+    margin-top: 92px
+    margin-bottom: 321px
+  .why-list
+    margin-top: 50px
+    margin-left: -40px
+  .title-h1
+    font-size: 48px
+    font-family: "SFUIText-Bold", Arial, sans-serif
+  .subtitle-h1
+    font-family: "SFUIText-RegularG1", Arial, sans-serif
+    font-size: 30px
+  .title-h2
+    font-family: "SFUIText-Bold", Arial, sans-serif
+    font-size: 36px
+  .title-h3
+    font-size: 72px
+    font-family: "SFUIText-Bold", Arial, sans-serif
+    color: #0084FF
+  .title-h4
+    font-size: 24px
+    font-family: "SFUIText-Medium", Arial, sans-serif
+    color: #0084FF
+  .title-default
+    color: #fff
+    font-family: "SFUIText-Medium", Arial, sans-serif
+  .sub-title
+    font-family: "SFUIText-Medium", Arial, sans-serif
+    font-size: 22px
+    color: #0084FF
+  .video-info-text
+    font-family: "SFUIText-Light", Arial, sans-serif
+    font-size: 18px
+  .description-text
+    font-family: "SFUIText-Regular", Arial, sans-serif
+    font-size: 18px
+  .description-sub-text
+    font-family: "SFUIText-RegularG1", Arial, sans-serif
+    font-size: 18px
+  .description-important-info, .description-link
+    font-family: "SFUIText-Bold", Arial, sans-serif
+    font-size: 18px
+  .description-link
+    color: #0084FF
+  .info-text
+    font-family: "SFUIText-Medium", Arial, sans-serif
+    font-size: 24px
+  .share-link
+    font-family: "SFUIText-Regular", Arial, sans-serif
+    font-size: 18px
+    color: #555
+    &:hover
+      color: #0084FF
+    .icon
+      margin-bottom: 30px
+  .description-block
+    .title
+      margin-bottom: 38px
+      margin-top: 48px
+  .holder-after
+    .col-lg-5
+      padding: 15px 34px 0 100px
+    .col-lg-7
+      padding: 0 110px 0 0
+    *
+      margin: 0
+    * ~ *
+      margin-top: 3px
+  .holder-before
+    margin-top: 86px
+    .col-lg-5
+      padding: 14px 100px 0 34px
+    .col-lg-7
+      padding: 1px 110px 0 97px
+      *
+        margin: 0
+      * ~ *
+        margin-top: 5px
+  .why-text
+    width: 315px
+    margin: 12px 0 0 95px
+  .submit-title
+    margin-top: 120px
+    margin-bottom: -29px
+    padding: 0 190px
+    .title
+      color: #fff
+  .submit-form
+    padding: 46px 94px
+    margin: 37px 0
+    .btn
+      margin-top: 21px
+      height: 81px
+      margin-bottom: 121px
+      font-size: 24px
+      line-height: 75px
+  /*Lists*/
+  .section-results
+    background: #0084FF url("../img/content/img-bg-1.jpg") 0 0 no-repeat
+    background-size: cover
+    margin-top: 30px
+    margin-bottom: 56px
+  .holder-block
+    padding: 0 100px
+    margin-top: 20px
+    .title
+      padding: 0 240px
+      margin-bottom: 52px
+    .info-block ~ .info-block
+      margin-left: 197px
+  .info-block
+    width: 202px
+    margin-bottom: 146px
+    .info-text
+      text-align: center
+      width: 280px
+      margin-top: 17px
+      margin-left: -50px
+  .scheme-holder
+    .title
+      margin-top: 40px
+      margin-bottom: 9px
+    margin-bottom: 154px
+  .scheme-list
+    display: block
+    list-style: none
+    overflow: hidden
+    margin-top: 19px
+    margin-bottom: 0
+    padding-left: 126px
+    padding-bottom: 5px
+    counter-reset: numList
+    li
+      display: block
+      position: relative
+      counter-increment: numList
+      &:before
+        content: counter(numList)
+        float: left
+        position: absolute
+        left: -26px
+        font: bold 32px sans-serif
+        text-align: center
+        color: #fff
+        line-height: 50px
+        width: 50px
+        height: 50px
+        background: #0084FF
+        -moz-border-radius: 999px
+        border-radius: 999px
+  .scheme-list-item ~ .scheme-list-item
+    margin-top: 13px
+  .scheme-list-item
+    font-family: "SFUIText-RegularG1", Arial, sans-serif
+    font-size: 30px
+  .price-holder
+    .title
+      margin-bottom: 47px
+    margin-bottom: 39px
+  .block-price
+    padding-left: 295px
+    margin-left: -149px
+    ~ .block-price
+      margin-left: 10px
+    .icon-plane
+      margin-bottom: 19px
+    .icon-plane2
+      margin: 6px 8px 28px
+    .icon-plane3
+      margin: 4px 0 21px 4px
+    .price-title-h4
+      margin-bottom: -4px
+      margin-left: 0
+    .price-title-h5
+      margin-left: -12px
+      margin-bottom: 15px
+    .price-title-h6
+      min-width: 165px
+      margin-left: -52px
+      margin-bottom: 79px
+    .price-info
+      padding: 0 16px
+      min-width: 415px
+      margin-left: -145px
+      margin-top: -66px
+      line-height: 28px
+    .btn
+      margin-top: 32px
+      min-width: 370px
+      margin-left: -44px
+      min-height: 75px
+      font-family: "SFUIText-Bold", Arial, sans-serif
+      font-size: 24px
+    .carousel-inner
+      .item
+        display: block
+  .price-title-h4
+    font-family: "SFUIText-Regular", Arial, sans-serif
+    font-size: 18px
+    color: #959595
+    text-align: center
+  .price-title-h5
+    font-family: "SFUIText-Medium", Arial, sans-serif
+    font-size: 24px
+    color: #0084FF
+    text-align: center
+  .price-title-h6
+    font-family: "SFUIText-Bold", Arial, sans-serif
+    font-size: 30px
+    color: #0084FF
+    text-align: center
+  .price-info
+    li
+      font-family: "SFUIText-RegularG1", Arial, sans-serif
+      font-size: 18px
+      color: #959595
+      &:before
+        content: "-"
+        position: relative
+        left: -5px
+      &:last-child
+        &:before
+          content: " "
+    .btn
+      margin-left: auto
+      line-height: 68px
+  .video-holder
+    .title
+      margin-top: 91px
+      max-width: 585px
+      margin-left: 295px
+      margin-bottom: 54px
+  .video-info
+    .sub-title
+      margin-top: 6px
+      margin-bottom: 0
+    p
+      margin-bottom: 13px
+    .col-lg-6
+      margin-bottom: 56px
+  .form-holder
+    .title
+      margin: 103px 0 33px
+  .form-footer
+    padding: 0
+    .btn-holder
+      .btn
+        font-size: 24px
+        height: 79px
+        line-height: 78px
+    .form-group-footer
+      input
+        background-color: #555
+        border: none
+      margin-bottom: 21px
+  .form-title
+    font-family: "SFUIText-Bold", Arial, sans-serif
+    font-size: 36px
+    color: #fff
+  .title-contact
+    float: left
+    margin: 41px 300px 10px 0
+    color: #fff
+    font-size: 36px
+    font-family: "SFUIText-Bold", Arial, sans-serif
+  .contact-data
+    float: left
+    margin: -2px 0 0 4px
+    .icon
+      margin: 5px
+    .contact
+      margin: 5px
+    .contact-info
+      margin: 5px
+  .contact-data
+    .icon
+      margin: 0 0 15px 0
+  .contact
+    color: #555
+    font-size: 36px
+    font-family: "SFUIText-Bold", Arial, sans-serif
+    margin-left: 10px
+  .contact-info
+    color: #fff
+    font-size: 36px
+    margin-left: 10px
+    font-family: "SFUIText-Regular", Arial, sans-serif
+  .contacts-holder
+    border-bottom: 5px solid #0084FF
+    padding-bottom: 49px
+  .contact-holder
+    margin: 14% 0 0 0
+  .contact-info-holder
+    padding: 25px 9px 137px 0
+  .logo-footer
+    margin-top: 22px
+  .social-holder
+    margin-top: 19px
+    padding: 0 0 0 14px
+  .social-list
+    margin-left: 67px
+  .social-item
+    padding: 0
+    max-width: 55px
+    ~ .social-item
+      margin-left: 45px
+  .col-lg-offset-0
+    margin-left: 0
+
+//ALWAYS END
+@import "media"
+

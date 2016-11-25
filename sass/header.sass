@@ -1,0 +1,80 @@
+@import "vars.sass"
+@import "fonts.sass"
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: 1.6
+  font-family: $font_RobotoRegular
+  overflow-x: hidden
+  height: 100%
+  display: flex
+  flex-direction: column
+  color: $main_txt_color
+
+h1
+  color: $auxiliary_txt_color
+  font: 60px $font_ROBOTO_THIN
+  letter-spacing: 0.6px
+
+p
+  padding: 0
+  margin: 0
+
+html .loader
+  background: none repeat scroll 0 0 #ffffff
+  bottom: 0
+  height: 100%
+  left: 0
+  position: fixed
+  right: 0
+  top: 0
+  width: 100%
+  z-index: 9999
+  .loader_inner
+    background-image: url("../img/preloader.gif")
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+    background-color: #fff
+    height: 60px
+    width: 60px
+    margin-top: -30px
+    margin-left: -30px
+    left: 50%
+    top: 50%
+    position: absolute
+
+.hidden
+  display: none
+// Header
+.header
+  text-align: center
+
+.header_logo
+  display: inline-block
+  float: left
+  margin-top: 10px
+  margin-left: 6px
+  a
+    color: $main_txt_color
+    font: 34px $font_ROBOTO_BLACK
+    &:hover
+      text-decoration: none
+
+.header_nav
+  display: inline-block
+  position: relative
+  ul
+
+    li
+      list-style: none
+      display: inline-block
+
+.main_content
+  text-align: center
+  flex: 1 0 auto
+// Секция 
+// Секция 
+// Секция 

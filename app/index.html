@@ -1,0 +1,2334 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Инстаграм</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <!-- Bootstrap v3.3.4 Grid Styles -->
+    <style>
+        html {
+            font-family: sans-serif;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%
+        }
+
+        body {
+            margin: 0
+        }
+
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        main,
+        menu,
+        nav,
+        section,
+        summary {
+            display: block
+        }
+
+        audio,
+        canvas,
+        progress,
+        video {
+            display: inline-block;
+            vertical-align: baseline
+        }
+
+        audio:not([controls]) {
+            display: none;
+            height: 0
+        }
+
+        [hidden],
+        template {
+            display: none
+        }
+
+        a {
+            background-color: transparent
+        }
+
+        a:active,
+        a:hover {
+            outline: 0
+        }
+
+        abbr[title] {
+            border-bottom: 1px dotted
+        }
+
+        b,
+        strong {
+            font-weight: bold
+        }
+
+        dfn {
+            font-style: italic
+        }
+
+        h1 {
+            font-size: 2em;
+            margin: 0.67em 0
+        }
+
+        mark {
+            background: #ff0;
+            color: #000
+        }
+
+        small {
+            font-size: 80%
+        }
+
+        sub,
+        sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline
+        }
+
+        sup {
+            top: -0.5em
+        }
+
+        sub {
+            bottom: -0.25em
+        }
+
+        img {
+            border: 0
+        }
+
+        svg:not(:root) {
+            overflow: hidden
+        }
+
+        figure {
+            margin: 1em 40px
+        }
+
+        hr {
+            -moz-box-sizing: content-box;
+            -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+            height: 0
+        }
+
+        pre {
+            overflow: auto
+        }
+
+        code,
+        kbd,
+        pre,
+        samp {
+            font-family: monospace, monospace;
+            font-size: 1em
+        }
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            color: inherit;
+            font: inherit;
+            margin: 0
+        }
+
+        button {
+            overflow: visible
+        }
+
+        button,
+        select {
+            text-transform: none
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"] {
+            -webkit-appearance: button;
+            cursor: pointer
+        }
+
+        button[disabled],
+        html input[disabled] {
+            cursor: default
+        }
+
+        button::-moz-focus-inner,
+        input::-moz-focus-inner {
+            border: 0;
+            padding: 0
+        }
+
+        input {
+            line-height: normal
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 0
+        }
+
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            height: auto
+        }
+
+        input[type="search"] {
+            -webkit-appearance: textfield;
+            -moz-box-sizing: content-box;
+            -webkit-box-sizing: content-box;
+            box-sizing: content-box
+        }
+
+        input[type="search"]::-webkit-search-cancel-button,
+        input[type="search"]::-webkit-search-decoration {
+            -webkit-appearance: none
+        }
+
+        fieldset {
+            border: 1px solid #c0c0c0;
+            margin: 0 2px;
+            padding: 0.35em 0.625em 0.75em
+        }
+
+        legend {
+            border: 0;
+            padding: 0
+        }
+
+        textarea {
+            overflow: auto
+        }
+
+        optgroup {
+            font-weight: bold
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0
+        }
+
+        td,
+        th {
+            padding: 0
+        }
+
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box
+        }
+
+        *:before,
+        *:after {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box
+        }
+
+        html {
+            font-size: 10px;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+        }
+
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #333;
+            background-color: #fff
+        }
+
+        input,
+        button,
+        select,
+        textarea {
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit
+        }
+
+        a {
+            color: #337ab7;
+            text-decoration: none
+        }
+
+        a:hover,
+        a:focus {
+            color: #23527c;
+            text-decoration: underline
+        }
+
+        a:focus {
+            outline: thin dotted;
+            outline: 5px auto -webkit-focus-ring-color;
+            outline-offset: -2px
+        }
+
+        figure {
+            margin: 0
+        }
+
+        img {
+            vertical-align: middle
+        }
+
+        .img-responsive {
+            display: block;
+            max-width: 100%;
+            height: auto
+        }
+
+        .img-rounded {
+            border-radius: 6px
+        }
+
+        .img-thumbnail {
+            padding: 4px;
+            line-height: 1.42857143;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            -webkit-transition: all .2s ease-in-out;
+            -o-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+            display: inline-block;
+            max-width: 100%;
+            height: auto
+        }
+
+        .img-circle {
+            border-radius: 50%
+        }
+
+        hr {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border: 0;
+            border-top: 1px solid #eee
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            padding: 0;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0
+        }
+
+        .sr-only-focusable:active,
+        .sr-only-focusable:focus {
+            position: static;
+            width: auto;
+            height: auto;
+            margin: 0;
+            overflow: visible;
+            clip: auto
+        }
+
+        [role="button"] {
+            cursor: pointer
+        }
+
+        .container {
+            margin-right: auto;
+            margin-left: auto;
+            padding-left: 15px;
+            padding-right: 15px
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                width: 750px
+            }
+        }
+
+        @media (min-width: 992px) {
+            .container {
+                width: 970px
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                width: 1170px
+            }
+        }
+
+        .container-fluid {
+            margin-right: auto;
+            margin-left: auto;
+            padding-left: 15px;
+            padding-right: 15px
+        }
+
+        .row {
+            margin-left: -15px;
+            margin-right: -15px
+        }
+
+        .col-xs-1,
+        .col-sm-1,
+        .col-md-1,
+        .col-lg-1,
+        .col-xs-2,
+        .col-sm-2,
+        .col-md-2,
+        .col-lg-2,
+        .col-xs-3,
+        .col-sm-3,
+        .col-md-3,
+        .col-lg-3,
+        .col-xs-4,
+        .col-sm-4,
+        .col-md-4,
+        .col-lg-4,
+        .col-xs-5,
+        .col-sm-5,
+        .col-md-5,
+        .col-lg-5,
+        .col-xs-6,
+        .col-sm-6,
+        .col-md-6,
+        .col-lg-6,
+        .col-xs-7,
+        .col-sm-7,
+        .col-md-7,
+        .col-lg-7,
+        .col-xs-8,
+        .col-sm-8,
+        .col-md-8,
+        .col-lg-8,
+        .col-xs-9,
+        .col-sm-9,
+        .col-md-9,
+        .col-lg-9,
+        .col-xs-10,
+        .col-sm-10,
+        .col-md-10,
+        .col-lg-10,
+        .col-xs-11,
+        .col-sm-11,
+        .col-md-11,
+        .col-lg-11,
+        .col-xs-12,
+        .col-sm-12,
+        .col-md-12,
+        .col-lg-12 {
+            position: relative;
+            min-height: 1px;
+            padding-left: 15px;
+            padding-right: 15px
+        }
+
+        .col-xs-1,
+        .col-xs-2,
+        .col-xs-3,
+        .col-xs-4,
+        .col-xs-5,
+        .col-xs-6,
+        .col-xs-7,
+        .col-xs-8,
+        .col-xs-9,
+        .col-xs-10,
+        .col-xs-11,
+        .col-xs-12 {
+            float: left
+        }
+
+        .col-xs-12 {
+            width: 100%
+        }
+
+        .col-xs-11 {
+            width: 91.66666667%
+        }
+
+        .col-xs-10 {
+            width: 83.33333333%
+        }
+
+        .col-xs-9 {
+            width: 75%
+        }
+
+        .col-xs-8 {
+            width: 66.66666667%
+        }
+
+        .col-xs-7 {
+            width: 58.33333333%
+        }
+
+        .col-xs-6 {
+            width: 50%
+        }
+
+        .col-xs-5 {
+            width: 41.66666667%
+        }
+
+        .col-xs-4 {
+            width: 33.33333333%
+        }
+
+        .col-xs-3 {
+            width: 25%
+        }
+
+        .col-xs-2 {
+            width: 16.66666667%
+        }
+
+        .col-xs-1 {
+            width: 8.33333333%
+        }
+
+        .col-xs-pull-12 {
+            right: 100%
+        }
+
+        .col-xs-pull-11 {
+            right: 91.66666667%
+        }
+
+        .col-xs-pull-10 {
+            right: 83.33333333%
+        }
+
+        .col-xs-pull-9 {
+            right: 75%
+        }
+
+        .col-xs-pull-8 {
+            right: 66.66666667%
+        }
+
+        .col-xs-pull-7 {
+            right: 58.33333333%
+        }
+
+        .col-xs-pull-6 {
+            right: 50%
+        }
+
+        .col-xs-pull-5 {
+            right: 41.66666667%
+        }
+
+        .col-xs-pull-4 {
+            right: 33.33333333%
+        }
+
+        .col-xs-pull-3 {
+            right: 25%
+        }
+
+        .col-xs-pull-2 {
+            right: 16.66666667%
+        }
+
+        .col-xs-pull-1 {
+            right: 8.33333333%
+        }
+
+        .col-xs-pull-0 {
+            right: auto
+        }
+
+        .col-xs-push-12 {
+            left: 100%
+        }
+
+        .col-xs-push-11 {
+            left: 91.66666667%
+        }
+
+        .col-xs-push-10 {
+            left: 83.33333333%
+        }
+
+        .col-xs-push-9 {
+            left: 75%
+        }
+
+        .col-xs-push-8 {
+            left: 66.66666667%
+        }
+
+        .col-xs-push-7 {
+            left: 58.33333333%
+        }
+
+        .col-xs-push-6 {
+            left: 50%
+        }
+
+        .col-xs-push-5 {
+            left: 41.66666667%
+        }
+
+        .col-xs-push-4 {
+            left: 33.33333333%
+        }
+
+        .col-xs-push-3 {
+            left: 25%
+        }
+
+        .col-xs-push-2 {
+            left: 16.66666667%
+        }
+
+        .col-xs-push-1 {
+            left: 8.33333333%
+        }
+
+        .col-xs-push-0 {
+            left: auto
+        }
+
+        .col-xs-offset-12 {
+            margin-left: 100%
+        }
+
+        .col-xs-offset-11 {
+            margin-left: 91.66666667%
+        }
+
+        .col-xs-offset-10 {
+            margin-left: 83.33333333%
+        }
+
+        .col-xs-offset-9 {
+            margin-left: 75%
+        }
+
+        .col-xs-offset-8 {
+            margin-left: 66.66666667%
+        }
+
+        .col-xs-offset-7 {
+            margin-left: 58.33333333%
+        }
+
+        .col-xs-offset-6 {
+            margin-left: 50%
+        }
+
+        .col-xs-offset-5 {
+            margin-left: 41.66666667%
+        }
+
+        .col-xs-offset-4 {
+            margin-left: 33.33333333%
+        }
+
+        .col-xs-offset-3 {
+            margin-left: 25%
+        }
+
+        .col-xs-offset-2 {
+            margin-left: 16.66666667%
+        }
+
+        .col-xs-offset-1 {
+            margin-left: 8.33333333%
+        }
+
+        .col-xs-offset-0 {
+            margin-left: 0
+        }
+
+        @media (min-width: 768px) {
+            .col-sm-1,
+            .col-sm-2,
+            .col-sm-3,
+            .col-sm-4,
+            .col-sm-5,
+            .col-sm-6,
+            .col-sm-7,
+            .col-sm-8,
+            .col-sm-9,
+            .col-sm-10,
+            .col-sm-11,
+            .col-sm-12 {
+                float: left
+            }
+
+            .col-sm-12 {
+                width: 100%
+            }
+
+            .col-sm-11 {
+                width: 91.66666667%
+            }
+
+            .col-sm-10 {
+                width: 83.33333333%
+            }
+
+            .col-sm-9 {
+                width: 75%
+            }
+
+            .col-sm-8 {
+                width: 66.66666667%
+            }
+
+            .col-sm-7 {
+                width: 58.33333333%
+            }
+
+            .col-sm-6 {
+                width: 50%
+            }
+
+            .col-sm-5 {
+                width: 41.66666667%
+            }
+
+            .col-sm-4 {
+                width: 33.33333333%
+            }
+
+            .col-sm-3 {
+                width: 25%
+            }
+
+            .col-sm-2 {
+                width: 16.66666667%
+            }
+
+            .col-sm-1 {
+                width: 8.33333333%
+            }
+
+            .col-sm-pull-12 {
+                right: 100%
+            }
+
+            .col-sm-pull-11 {
+                right: 91.66666667%
+            }
+
+            .col-sm-pull-10 {
+                right: 83.33333333%
+            }
+
+            .col-sm-pull-9 {
+                right: 75%
+            }
+
+            .col-sm-pull-8 {
+                right: 66.66666667%
+            }
+
+            .col-sm-pull-7 {
+                right: 58.33333333%
+            }
+
+            .col-sm-pull-6 {
+                right: 50%
+            }
+
+            .col-sm-pull-5 {
+                right: 41.66666667%
+            }
+
+            .col-sm-pull-4 {
+                right: 33.33333333%
+            }
+
+            .col-sm-pull-3 {
+                right: 25%
+            }
+
+            .col-sm-pull-2 {
+                right: 16.66666667%
+            }
+
+            .col-sm-pull-1 {
+                right: 8.33333333%
+            }
+
+            .col-sm-pull-0 {
+                right: auto
+            }
+
+            .col-sm-push-12 {
+                left: 100%
+            }
+
+            .col-sm-push-11 {
+                left: 91.66666667%
+            }
+
+            .col-sm-push-10 {
+                left: 83.33333333%
+            }
+
+            .col-sm-push-9 {
+                left: 75%
+            }
+
+            .col-sm-push-8 {
+                left: 66.66666667%
+            }
+
+            .col-sm-push-7 {
+                left: 58.33333333%
+            }
+
+            .col-sm-push-6 {
+                left: 50%
+            }
+
+            .col-sm-push-5 {
+                left: 41.66666667%
+            }
+
+            .col-sm-push-4 {
+                left: 33.33333333%
+            }
+
+            .col-sm-push-3 {
+                left: 25%
+            }
+
+            .col-sm-push-2 {
+                left: 16.66666667%
+            }
+
+            .col-sm-push-1 {
+                left: 8.33333333%
+            }
+
+            .col-sm-push-0 {
+                left: auto
+            }
+
+            .col-sm-offset-12 {
+                margin-left: 100%
+            }
+
+            .col-sm-offset-11 {
+                margin-left: 91.66666667%
+            }
+
+            .col-sm-offset-10 {
+                margin-left: 83.33333333%
+            }
+
+            .col-sm-offset-9 {
+                margin-left: 75%
+            }
+
+            .col-sm-offset-8 {
+                margin-left: 66.66666667%
+            }
+
+            .col-sm-offset-7 {
+                margin-left: 58.33333333%
+            }
+
+            .col-sm-offset-6 {
+                margin-left: 50%
+            }
+
+            .col-sm-offset-5 {
+                margin-left: 41.66666667%
+            }
+
+            .col-sm-offset-4 {
+                margin-left: 33.33333333%
+            }
+
+            .col-sm-offset-3 {
+                margin-left: 25%
+            }
+
+            .col-sm-offset-2 {
+                margin-left: 16.66666667%
+            }
+
+            .col-sm-offset-1 {
+                margin-left: 8.33333333%
+            }
+
+            .col-sm-offset-0 {
+                margin-left: 0
+            }
+        }
+
+        @media (min-width: 992px) {
+            .col-md-1,
+            .col-md-2,
+            .col-md-3,
+            .col-md-4,
+            .col-md-5,
+            .col-md-6,
+            .col-md-7,
+            .col-md-8,
+            .col-md-9,
+            .col-md-10,
+            .col-md-11,
+            .col-md-12 {
+                float: left
+            }
+
+            .col-md-12 {
+                width: 100%
+            }
+
+            .col-md-11 {
+                width: 91.66666667%
+            }
+
+            .col-md-10 {
+                width: 83.33333333%
+            }
+
+            .col-md-9 {
+                width: 75%
+            }
+
+            .col-md-8 {
+                width: 66.66666667%
+            }
+
+            .col-md-7 {
+                width: 58.33333333%
+            }
+
+            .col-md-6 {
+                width: 50%
+            }
+
+            .col-md-5 {
+                width: 41.66666667%
+            }
+
+            .col-md-4 {
+                width: 33.33333333%
+            }
+
+            .col-md-3 {
+                width: 25%
+            }
+
+            .col-md-2 {
+                width: 16.66666667%
+            }
+
+            .col-md-1 {
+                width: 8.33333333%
+            }
+
+            .col-md-pull-12 {
+                right: 100%
+            }
+
+            .col-md-pull-11 {
+                right: 91.66666667%
+            }
+
+            .col-md-pull-10 {
+                right: 83.33333333%
+            }
+
+            .col-md-pull-9 {
+                right: 75%
+            }
+
+            .col-md-pull-8 {
+                right: 66.66666667%
+            }
+
+            .col-md-pull-7 {
+                right: 58.33333333%
+            }
+
+            .col-md-pull-6 {
+                right: 50%
+            }
+
+            .col-md-pull-5 {
+                right: 41.66666667%
+            }
+
+            .col-md-pull-4 {
+                right: 33.33333333%
+            }
+
+            .col-md-pull-3 {
+                right: 25%
+            }
+
+            .col-md-pull-2 {
+                right: 16.66666667%
+            }
+
+            .col-md-pull-1 {
+                right: 8.33333333%
+            }
+
+            .col-md-pull-0 {
+                right: auto
+            }
+
+            .col-md-push-12 {
+                left: 100%
+            }
+
+            .col-md-push-11 {
+                left: 91.66666667%
+            }
+
+            .col-md-push-10 {
+                left: 83.33333333%
+            }
+
+            .col-md-push-9 {
+                left: 75%
+            }
+
+            .col-md-push-8 {
+                left: 66.66666667%
+            }
+
+            .col-md-push-7 {
+                left: 58.33333333%
+            }
+
+            .col-md-push-6 {
+                left: 50%
+            }
+
+            .col-md-push-5 {
+                left: 41.66666667%
+            }
+
+            .col-md-push-4 {
+                left: 33.33333333%
+            }
+
+            .col-md-push-3 {
+                left: 25%
+            }
+
+            .col-md-push-2 {
+                left: 16.66666667%
+            }
+
+            .col-md-push-1 {
+                left: 8.33333333%
+            }
+
+            .col-md-push-0 {
+                left: auto
+            }
+
+            .col-md-offset-12 {
+                margin-left: 100%
+            }
+
+            .col-md-offset-11 {
+                margin-left: 91.66666667%
+            }
+
+            .col-md-offset-10 {
+                margin-left: 83.33333333%
+            }
+
+            .col-md-offset-9 {
+                margin-left: 75%
+            }
+
+            .col-md-offset-8 {
+                margin-left: 66.66666667%
+            }
+
+            .col-md-offset-7 {
+                margin-left: 58.33333333%
+            }
+
+            .col-md-offset-6 {
+                margin-left: 50%
+            }
+
+            .col-md-offset-5 {
+                margin-left: 41.66666667%
+            }
+
+            .col-md-offset-4 {
+                margin-left: 33.33333333%
+            }
+
+            .col-md-offset-3 {
+                margin-left: 25%
+            }
+
+            .col-md-offset-2 {
+                margin-left: 16.66666667%
+            }
+
+            .col-md-offset-1 {
+                margin-left: 8.33333333%
+            }
+
+            .col-md-offset-0 {
+                margin-left: 0
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .col-lg-1,
+            .col-lg-2,
+            .col-lg-3,
+            .col-lg-4,
+            .col-lg-5,
+            .col-lg-6,
+            .col-lg-7,
+            .col-lg-8,
+            .col-lg-9,
+            .col-lg-10,
+            .col-lg-11,
+            .col-lg-12 {
+                float: left
+            }
+
+            .col-lg-12 {
+                width: 100%
+            }
+
+            .col-lg-11 {
+                width: 91.66666667%
+            }
+
+            .col-lg-10 {
+                width: 83.33333333%
+            }
+
+            .col-lg-9 {
+                width: 75%
+            }
+
+            .col-lg-8 {
+                width: 66.66666667%
+            }
+
+            .col-lg-7 {
+                width: 58.33333333%
+            }
+
+            .col-lg-6 {
+                width: 50%
+            }
+
+            .col-lg-5 {
+                width: 41.66666667%
+            }
+
+            .col-lg-4 {
+                width: 33.33333333%
+            }
+
+            .col-lg-3 {
+                width: 25%
+            }
+
+            .col-lg-2 {
+                width: 16.66666667%
+            }
+
+            .col-lg-1 {
+                width: 8.33333333%
+            }
+
+            .col-lg-pull-12 {
+                right: 100%
+            }
+
+            .col-lg-pull-11 {
+                right: 91.66666667%
+            }
+
+            .col-lg-pull-10 {
+                right: 83.33333333%
+            }
+
+            .col-lg-pull-9 {
+                right: 75%
+            }
+
+            .col-lg-pull-8 {
+                right: 66.66666667%
+            }
+
+            .col-lg-pull-7 {
+                right: 58.33333333%
+            }
+
+            .col-lg-pull-6 {
+                right: 50%
+            }
+
+            .col-lg-pull-5 {
+                right: 41.66666667%
+            }
+
+            .col-lg-pull-4 {
+                right: 33.33333333%
+            }
+
+            .col-lg-pull-3 {
+                right: 25%
+            }
+
+            .col-lg-pull-2 {
+                right: 16.66666667%
+            }
+
+            .col-lg-pull-1 {
+                right: 8.33333333%
+            }
+
+            .col-lg-pull-0 {
+                right: auto
+            }
+
+            .col-lg-push-12 {
+                left: 100%
+            }
+
+            .col-lg-push-11 {
+                left: 91.66666667%
+            }
+
+            .col-lg-push-10 {
+                left: 83.33333333%
+            }
+
+            .col-lg-push-9 {
+                left: 75%
+            }
+
+            .col-lg-push-8 {
+                left: 66.66666667%
+            }
+
+            .col-lg-push-7 {
+                left: 58.33333333%
+            }
+
+            .col-lg-push-6 {
+                left: 50%
+            }
+
+            .col-lg-push-5 {
+                left: 41.66666667%
+            }
+
+            .col-lg-push-4 {
+                left: 33.33333333%
+            }
+
+            .col-lg-push-3 {
+                left: 25%
+            }
+
+            .col-lg-push-2 {
+                left: 16.66666667%
+            }
+
+            .col-lg-push-1 {
+                left: 8.33333333%
+            }
+
+            .col-lg-push-0 {
+                left: auto
+            }
+
+            .col-lg-offset-12 {
+                margin-left: 100%
+            }
+
+            .col-lg-offset-11 {
+                margin-left: 91.66666667%
+            }
+
+            .col-lg-offset-10 {
+                margin-left: 83.33333333%
+            }
+
+            .col-lg-offset-9 {
+                margin-left: 75%
+            }
+
+            .col-lg-offset-8 {
+                margin-left: 66.66666667%
+            }
+
+            .col-lg-offset-7 {
+                margin-left: 58.33333333%
+            }
+
+            .col-lg-offset-6 {
+                margin-left: 50%
+            }
+
+            .col-lg-offset-5 {
+                margin-left: 41.66666667%
+            }
+
+            .col-lg-offset-4 {
+                margin-left: 33.33333333%
+            }
+
+            .col-lg-offset-3 {
+                margin-left: 25%
+            }
+
+            .col-lg-offset-2 {
+                margin-left: 16.66666667%
+            }
+
+            .col-lg-offset-1 {
+                margin-left: 8.33333333%
+            }
+
+            .col-lg-offset-0 {
+                margin-left: 0
+            }
+        }
+
+        .clearfix:before,
+        .clearfix:after,
+        .container:before,
+        .container:after,
+        .container-fluid:before,
+        .container-fluid:after,
+        .row:before,
+        .row:after {
+            content: " ";
+            display: table
+        }
+
+        .clearfix:after,
+        .container:after,
+        .container-fluid:after,
+        .row:after {
+            clear: both
+        }
+
+        .center-block {
+            display: block;
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        .pull-right {
+            float: right !important
+        }
+
+        .pull-left {
+            float: left !important
+        }
+
+        .hide {
+            display: none !important
+        }
+
+        .show {
+            display: block !important
+        }
+
+        .invisible {
+            visibility: hidden
+        }
+
+        .text-hide {
+            font: 0/0 a;
+            color: transparent;
+            text-shadow: none;
+            background-color: transparent;
+            border: 0
+        }
+
+        .hidden {
+            display: none !important
+        }
+
+        .affix {
+            position: fixed
+        }
+
+        @-ms-viewport {
+            width: device-width
+        }
+
+        .visible-xs,
+        .visible-sm,
+        .visible-md,
+        .visible-lg {
+            display: none !important
+        }
+
+        .visible-xs-block,
+        .visible-xs-inline,
+        .visible-xs-inline-block,
+        .visible-sm-block,
+        .visible-sm-inline,
+        .visible-sm-inline-block,
+        .visible-md-block,
+        .visible-md-inline,
+        .visible-md-inline-block,
+        .visible-lg-block,
+        .visible-lg-inline,
+        .visible-lg-inline-block {
+            display: none !important
+        }
+
+        @media (max-width: 767px) {
+            .visible-xs {
+                display: block !important
+            }
+
+            table.visible-xs {
+                display: table
+            }
+
+            tr.visible-xs {
+                display: table-row !important
+            }
+
+            th.visible-xs,
+            td.visible-xs {
+                display: table-cell !important
+            }
+        }
+
+        @media (max-width: 767px) {
+            .visible-xs-block {
+                display: block !important
+            }
+        }
+
+        @media (max-width: 767px) {
+            .visible-xs-inline {
+                display: inline !important
+            }
+        }
+
+        @media (max-width: 767px) {
+            .visible-xs-inline-block {
+                display: inline-block !important
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            .visible-sm {
+                display: block !important
+            }
+
+            table.visible-sm {
+                display: table
+            }
+
+            tr.visible-sm {
+                display: table-row !important
+            }
+
+            th.visible-sm,
+            td.visible-sm {
+                display: table-cell !important
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            .visible-sm-block {
+                display: block !important
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            .visible-sm-inline {
+                display: inline !important
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            .visible-sm-inline-block {
+                display: inline-block !important
+            }
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            .visible-md {
+                display: block !important
+            }
+
+            table.visible-md {
+                display: table
+            }
+
+            tr.visible-md {
+                display: table-row !important
+            }
+
+            th.visible-md,
+            td.visible-md {
+                display: table-cell !important
+            }
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            .visible-md-block {
+                display: block !important
+            }
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            .visible-md-inline {
+                display: inline !important
+            }
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            .visible-md-inline-block {
+                display: inline-block !important
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .visible-lg {
+                display: block !important
+            }
+
+            table.visible-lg {
+                display: table
+            }
+
+            tr.visible-lg {
+                display: table-row !important
+            }
+
+            th.visible-lg,
+            td.visible-lg {
+                display: table-cell !important
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .visible-lg-block {
+                display: block !important
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .visible-lg-inline {
+                display: inline !important
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .visible-lg-inline-block {
+                display: inline-block !important
+            }
+        }
+
+        @media (max-width: 767px) {
+            .hidden-xs {
+                display: none !important
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            .hidden-sm {
+                display: none !important
+            }
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            .hidden-md {
+                display: none !important
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .hidden-lg {
+                display: none !important
+            }
+        }
+
+        .visible-print {
+            display: none !important
+        }
+
+        @media print {
+            .visible-print {
+                display: block !important
+            }
+
+            table.visible-print {
+                display: table
+            }
+
+            tr.visible-print {
+                display: table-row !important
+            }
+
+            th.visible-print,
+            td.visible-print {
+                display: table-cell !important
+            }
+        }
+
+        .visible-print-block {
+            display: none !important
+        }
+
+        @media print {
+            .visible-print-block {
+                display: block !important
+            }
+        }
+
+        .visible-print-inline {
+            display: none !important
+        }
+
+        @media print {
+            .visible-print-inline {
+                display: inline !important
+            }
+        }
+
+        .visible-print-inline-block {
+            display: none !important
+        }
+
+        @media print {
+            .visible-print-inline-block {
+                display: inline-block !important
+            }
+        }
+
+        @media print {
+            .hidden-print {
+                display: none !important
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <!-- Header CSS (First Sections of Website: paste after release from header.min.css here) -->
+    <style>
+        html .loader {
+            background: #fff;
+            bottom: 0;
+            height: 100%;
+            left: 0;
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 100%;
+            z-index: 9999
+        }
+
+        html .loader .loader_inner {
+            background-image: url(../img/preloader.gif);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-color: #fff;
+            height: 60px;
+            width: 60px;
+            margin-top: -30px;
+            margin-left: -30px;
+            left: 50%;
+            top: 50%;
+            position: absolute
+        }
+    </style>
+    <!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+    <script>
+        !function (e) {
+            "use strict";
+
+            function t(e, t, n) {
+                e.addEventListener ? e.addEventListener(t, n, !1) : e.attachEvent && e.attachEvent("on" + t, n)
+            }
+
+            function n(t, n) {
+                return e.localStorage && localStorage[t + "_content"] && localStorage[t + "_file"] === n
+            }
+
+            function a(t, a) {
+                if (e.localStorage && e.XMLHttpRequest) n(t, a) ? o(localStorage[t + "_content"]) : l(t, a);
+                else {
+                    var s = r.createElement("link");
+                    s.href = a, s.id = t, s.rel = "stylesheet", s.type = "text/css", r.getElementsByTagName("head")[0].appendChild(s), r.cookie = t
+                }
+            }
+
+            function l(e, t) {
+                var n = new XMLHttpRequest;
+                n.open("GET", t, !0), n.onreadystatechange = function () {
+                    4 === n.readyState && 200 === n.status && (o(n.responseText), localStorage[e + "_content"] = n.responseText, localStorage[e + "_file"] = t)
+                }, n.send()
+            }
+
+            function o(e) {
+                var t = r.createElement("style");
+                t.setAttribute("type", "text/css"), r.getElementsByTagName("head")[0].appendChild(t), t.styleSheet ? t.styleSheet.cssText = e : t.innerHTML = e
+            }
+
+            var r = e.document;
+            e.loadCSS = function (e, t, n) {
+                var a, l = r.createElement("link");
+                if (t) a = t;
+                else {
+                    var o;
+                    o = r.querySelectorAll ? r.querySelectorAll("style,link[rel=stylesheet],script") : (r.body || r.getElementsByTagName("head")[0]).childNodes, a = o[o.length - 1]
+                }
+                var s = r.styleSheets;
+                l.rel = "stylesheet", l.href = e, l.media = "only x", a.parentNode.insertBefore(l, t ? a : a.nextSibling);
+                var c = function (e) {
+                    for (var t = l.href, n = s.length; n--;)
+                        if (s[n].href === t) return e();
+                    setTimeout(function () {
+                        c(e)
+                    })
+                };
+                return l.onloadcssdefined = c, c(function () {
+                    l.media = n || "all"
+                }), l
+            }, e.loadLocalStorageCSS = function (l, o) {
+                n(l, o) || r.cookie.indexOf(l) > -1 ? a(l, o) : t(e, "load", function () {
+                    a(l, o)
+                })
+            }
+        }(this);
+    </script>
+    <!-- Load CSS Start -->
+    <script>
+        loadLocalStorageCSS("webfonts", "css/fonts.min.css?ver=1.0.0");
+    </script>
+    <script>
+        loadCSS("css/header.min.css?ver=1.0.0", false, "all");
+    </script>
+    <script>
+        loadCSS("css/main.min.css?ver=1.0.0", false, "all");
+    </script>
+
+    <!-- Load CSS End -->
+    <!-- Load CSS Compiled without JS -->
+    <noscript>
+        <link rel="stylesheet" href="css/fonts.min.css">
+        <link rel="stylesheet" href="css/main.min.css">
+    </noscript>
+</head>
+
+<body>
+<div class="loader">
+    <div class="loader_inner"></div>
+</div>
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand navbar-logo"><i class="icon icon-logo"></i></a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Menu</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="btn btn-default contact-btn-sx">Заказать звонок</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item nav-item-active"><a class="nav-item-link" href="#">Главная</a></li>
+                    <li class="nav-item"><a class="nav-item-link" href="#">Тарифы</a></li>
+                    <li class="nav-item"><a class="nav-item-link" href="#">Контакты</a></li>
+                </ul>
+                <div class="nav navbar-nav navbar-right navbar-contacts">
+                    <a href="#" class="btn btn-default contact-btn">Заказать звонок</a>
+                    <p class="navbar-phone">+7&nbsp;(234)&nbsp;234&nbsp;88&nbsp;10</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section class="wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+                <div class="header-title">
+                    <h1 class="title title-h1">
+                        Получайте Клиентов Каждый День из Instagram Уже Через Месяц
+                    </h1>
+                </div>
+                <div class="header-subtitle">
+                    <h1 class="title subtitle-h1">
+                        Оформим ваш аккаунт и привлечем только живых заинтересованных подписчиков
+                    </h1>
+                </div>
+                <div class="btn-groups">
+                    <a href="#" class="btn btn-primary col-xs-6 col-sm-6 col-md-6 col-lg-6">Начать тестовый период</a>
+                    <a href="#" class="btn btn-default col-xs-6 col-sm-6 col-md-6 col-lg-6">Заказать продвижение</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <img src="img/content/img-slider-1.png" alt="image description">
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="why-title">
+                <h2 class="title title-h2">
+                    Почему Intagram Приносит Деньги?
+                </h2>
+                <ul class="why-list">
+                    <li class="col-xs-12 col-sm-6 col-md-4 col-lg-4 description-sub-text">
+                        <i class="icon icon-group"><p class="why-text">40.000.000 + русскоязычных пользователей</p></i>
+                    </li>
+                    <li class="col-xs-12 col-sm-6 col-md-4 col-lg-4 description-sub-text">
+                        <i class="icon icon-card"><p class="why-text">Платежеспособная аудитория</p></i>
+                    </li>
+                    <li class="col-xs-12 col-sm-6 col-md-4 col-lg-4 description-sub-text">
+                        <i class="icon icon-list"><p class="why-text">Целевой клиент дешевле, чем в контекстной рекламе</p></i>
+                    </li>
+                    <li class="col-xs-12 col-sm-6 col-md-4 col-lg-4 description-sub-text">
+                        <i class="icon icon-man"><p class="why-text">Бльше 12.000.000 ежедневно заходят в Instagram</p></i>
+                    </li>
+                    <li class="col-xs-12 col-sm-6 col-md-4 col-lg-4 description-sub-text">
+                        <i class="icon icon-reload"><p class="why-text">Активность Instagram: 2,5 млрд. лайков/день</p></i>
+                    </li>
+                    <li class="col-xs-12 col-sm-6 col-md-4 col-lg-4 description-sub-text">
+                        <i class="icon icon-menu"><p class="why-text">Виртуальный контент легко продает «сам себя»</p></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10  col-lg-offset-1 description-block">
+                <h2 class="title title-h2">
+                    Убедитесь Сами - Эфективность Аккаунтов ДО и ПОСЛЕ Продвижения
+                </h2>
+                <div class="description-holder holder-after clearfix">
+                    <div class="col-sm-5 col-md-5 col-lg-5">
+                        <img src="img/content/img-content-2.png" alt="image description" class="after">
+                    </div>
+                    <div class="col-sm-7 col-md-7 col-lg-7">
+                        <h2 class="title-h3">До</h2>
+                        <h3 class="title-h4">Сфера деятельности:</h3>
+                        <p class="description-text">Продажа женской одежды</p>
+                        <h3 class="title-h4">Задача:</h3>
+                        <p class="description-text">Увеличение продаж через инстаграм</p>
+                        <h3 class="title-h4">Задача:</h3>
+                        <p class="description-text">Был проведен аудит аккаунта
+                            Внесли изменения в профиль и коррективы
+                            в контент-план Собрана аудитория по городам
+                            Украины (доставляют только по Украине)
+                            Собрана аудитория по конкурентам Подписки
+                            только самые активные аккаунты из списков.</p>
+                        <h3 class="title-h4">Результат:</h3>
+                        <p class="description-text">1 месяц работы - 2900 подписчиков,
+                            более 15 заказов</p>
+                        <p class="description-text">
+                            <span class="description-important-info">Ссылка на аккаунт:</span>
+                            <a href="#" class="description-link">http://instagram.melfori.com/</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="description-holder holder-before clearfix">
+                    <div class="col-sm-7 col-md-7 col-lg-7">
+                        <h3 class="title-h3">После</h3>
+                        <h4 class="title-h4">Сфера деятельности:</h4>
+                        <p class="description-text">Продажа женской одежды</p>
+                        <h3 class="title-h4">Задача:</h3>
+                        <p class="description-text">Увеличение продаж через инстаграм</p>
+                        <h3 class="title-h4">Задача:</h3>
+                        <p class="description-text">Был проведен аудит аккаунта
+                            Внесли изменения в профиль и коррективы
+                            в контент-план Собрана аудитория по городам
+                            Украины (доставляют только по Украине)
+                            Собрана аудитория по конкурентам Подписки
+                            только самые активные аккаунты из списков.</p>
+                        <h3 class="title-h4">Результат:</h3>
+                        <p class="description-text">1 месяц работы - 2900 подписчиков,
+                            более 15 заказов</p>
+                        <p class="description-text">
+                            <span class="description-important-info">Ссылка на аккаунт:</span>
+                            <a href="#" class="description-link">http://instagram.melfori.com/</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-5 col-md-5 col-lg-5">
+                        <img src="img/content/img-content-1.png" alt="image description" class="after">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10  col-lg-offset-1 description-block-xs">
+                <h2 class="title title-h2">
+                    Убедитесь Сами - Эфективность Аккаунтов ДО и ПОСЛЕ Продвижения
+                </h2>
+                <div class="description-holder holder-after-before clearfix">
+                    <div class="col-xs-12">
+                        <img src="img/content/img-content-2.png" alt="image description" class="col-xs-6 after">
+                        <img src="img/content/img-content-1.png" alt="image description" class="col-xs-6 before">
+                    </div>
+                    <div class="col-xs-6 text-after">
+                        <h2 class="title-h3">До</h2>
+                        <h3 class="title-h4">Сфера деятельности:</h3>
+                        <p class="description-text">Продажа женской одежды</p>
+                        <h3 class="title-h4">Задача:</h3>
+                        <p class="description-text">Увеличение продаж через инстаграм</p>
+                        <h3 class="title-h4">Задача:</h3>
+                        <p class="description-text">Был проведен аудит аккаунта
+                            Внесли изменения в профиль и коррективы
+                            в контент-план Собрана аудитория по городам
+                            Украины (доставляют только по Украине)
+                            Собрана аудитория по конкурентам Подписки
+                            только самые активные аккаунты из списков.</p>
+                        <h3 class="title-h4">Результат:</h3>
+                        <p class="description-text">1 месяц работы - 2900 подписчиков,
+                            более 15 заказов</p>
+                        <p class="description-text">
+                            <span class="description-important-info">Ссылка на аккаунт:</span>
+                            <a href="#" class="description-link">http://instagram.melfori.com/</a>
+                        </p>
+                    </div>
+                    <div class="col-xs-6 text-before">
+                        <h3 class="title-h3">После</h3>
+                        <h4 class="title-h4">Сфера деятельности:</h4>
+                        <p class="description-text">Продажа женской одежды</p>
+                        <h3 class="title-h4">Задача:</h3>
+                        <p class="description-text">Увеличение продаж через инстаграм</p>
+                        <h3 class="title-h4">Задача:</h3>
+                        <p class="description-text">Был проведен аудит аккаунта
+                            Внесли изменения в профиль и коррективы
+                            в контент-план Собрана аудитория по городам
+                            Украины (доставляют только по Украине)
+                            Собрана аудитория по конкурентам Подписки
+                            только самые активные аккаунты из списков.</p>
+                        <h3 class="title-h4">Результат:</h3>
+                        <p class="description-text">1 месяц работы - 2900 подписчиков,
+                            более 15 заказов</p>
+                        <p class="description-text">
+                            <span class="description-important-info">Ссылка на аккаунт:</span>
+                            <a href="#" class="description-link">http://instagram.melfori.com/</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid section-results">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1  col-lg-10 col-lg-offset-1">
+                <div class="submit-title">
+                    <h2 class="title title-h2">
+                        Хотите таких же результатов?
+                        Отправьте заявку се&#1081;час и получите [подарок]!
+                    </h2>
+                </div>
+                <div class="submit-form">
+                    <form action="" class="form-horizontal col-sm-offset-1 col-sm-10 col-sm-offset-3 col-md-6 col-md-offset-3">
+                        <div class="form-group">
+                            <input type="text" placeholder="Имя" class="form-controls">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="E-mail" class="form-controls">
+                        </div>
+                        <a href="#" class="btn btn-primary btn-full-width">Заказать продвижение</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 holder-block">
+                <h2 class="title title-h2">
+                    Как мы Добиваемся Высокой Эффективности
+                </h2>
+                <div class="col-sm-4 col-md-4 info-block">
+                    <i class="icon icon-user"></i>
+                    <p class="info-text">Правильно Оформляем
+                        Аккаунт</p>
+                </div>
+                <div class="col-sm-4 col-md-4 info-block">
+                    <i class="icon icon-search"></i>
+                    <p class="info-text">Собираем Целевую
+                        Аудиторию</p>
+                </div>
+                <div class="col-sm-4 col-md-4 info-block">
+                    <i class="icon icon-sound"></i>
+                    <p class="info-text">Привлекаем Самых
+                        Заинтересованных</p>
+                </div>
+            </div>
+            <div class="col-xs-12 holder-block-xs">
+                <h2 class="title title-h2">
+                    Как мы Добиваемся Высокой Эффективности
+                </h2>
+                <div id="carousel-example-generic-xs" class="carousel slide" data-interval="99999999999999999"
+                     data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="col-xs-12 item active">
+                            <div class="col-xs-12 info-block">
+                                <i class="icon icon-user"></i>
+                                <p class="info-text">Правильно Оформляем
+                                    Аккаунт</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 item">
+                            <div class="col-xs-12 info-block">
+                                <i class="icon icon-search"></i>
+                                <p class="info-text">Собираем Целевую
+                                    Аудиторию</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 item">
+                            <div class="col-xs-12 info-block">
+                                <i class="icon icon-sound"></i>
+                                <p class="info-text">Привлекаем Самых
+                                    Заинтересованных</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic-xs" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic-xs" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 scheme-holder">
+                <h2 class="title title-h2">Простая Схема Нашей Работы</h2>
+                <ol class="scheme-list col-sm-12 col-md-12 col-lg-12">
+                    <li class="scheme-list-item">1 Оставляете заявку</li>
+                    <li class="scheme-list-item">2 Обсуждаем условия и подбираем тариф</li>
+                    <li class="scheme-list-item">3 Проводите оплату</li>
+                    <li class="scheme-list-item">4 Анализируем ваш аккаунт</li>
+                    <li class="scheme-list-item">5 Составляем план работ и начинаем продвижение</li>
+                    <li class="scheme-list-item">6 Вы получаете подписчиков и клиентов</li>
+                </ol>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 price-holder">
+                <h2 class="title title-h2">Тарифы</h2>
+                <div id="carousel-example-generic" class="carousel slide" data-interval="99999999999999999"
+                     data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-4 item active">
+                            <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-4 block-price">
+                                <i class="icon icon-plane"></i>
+                                <h4 class="price-title-h4">Тариф</h4>
+                                <h5 class="price-title-h5">«Старт»</h5>
+                                <h6 class="price-title-h6">9 900 руб.</h6>
+                                <ul class="price-info">
+                                    <li>Анализ бизнеса и аккаунтов конкурентов</li>
+                                    <li>Целевые подписчики</li>
+                                    <li>Увеличение продаж (получение потенциальных клиентов).</li>
+                                    <li>Рекомендации по оформлению аккаунта</li>
+                                    <li>Рекомендации по составлению контент-плана</li>
+                                    <li>Анализ и составление карты хештегов</li>
+                                    <li>Подписки по геолокации (страна, город, станция метро, улица)</li>
+                                    <li>Подписки по хэштегам</li>
+                                    <li>Подписки по аккаунтам конкурентов</li>
+                                    <li>Лайки вашим подписчикам 2 раза в месяц (увеличение лояльности к аккаунту)</li>
+                                    <li>Фильтр от ботов, магазинов, людей из других стран</li>
+                                    <li>
+                                        <a href="#" title="Order" class="btn btn-default">Заказать</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-4 item">
+                            <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-4 block-price">
+                                <i class="icon icon-plane2"></i>
+                                <h4 class="price-title-h4">Тариф</h4>
+                                <h5 class="price-title-h5">«Бизнес»</h5>
+                                <h6 class="price-title-h6">11 200 руб.</h6>
+                                <ul class="price-info">
+                                    <li>Анализ бизнеса и аккаунтов конкурентов</li>
+                                    <li>Целевые подписчики</li>
+                                    <li>Увеличение продаж (получение потенциальных клиентов).</li>
+                                    <li>Оформление аккаунта (аватар, описание с преимуществами, создание единого стиля
+                                        для контента)
+                                    </li>
+                                    <li>Рекомендации по составлению контент-плана</li>
+                                    <li>Анализ и составление карты хештегов</li>
+                                    <li>Подписки по геолокации (страна, город, станция метро, улица)</li>
+                                    <li>Подписки по хэштегам</li>
+                                    <li>Подписки по аккаунтам конкурентов</li>
+                                    <li>Лайки вашим подписчикам 2 раза в месяц (увеличение лояльности к аккаунту)</li>
+                                    <li>Фильтр от ботов, магазинов, людей из других стран</li>
+                                    <li>Написание продающих текстов, хэштегов.</li>
+                                    <li>
+                                        <a href="#" title="Order" class="btn btn-primary">Заказать</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-4 item">
+                            <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-4 block-price">
+                                <i class="icon icon-plane3"></i>
+                                <h4 class="price-title-h4">Тариф</h4>
+                                <h5 class="price-title-h5">«Мега»</h5>
+                                <h6 class="price-title-h6">30 000 руб.</h6>
+                                <ul class="price-info">
+                                    <li>Анализ бизнеса и аккаунтов конкурентов</li>
+                                    <li>Целевые подписчики</li>
+                                    <li>Увеличение продаж (получение потенциальных клиентов).</li>
+                                    <li>Оформление аккаунта (аватар, описание с преимуществами, создание единого стиля
+                                        для контента)
+                                    </li>
+                                    <li>Рекомендации по составлению контент-плана</li>
+                                    <li>Анализ и составление карты хештегов</li>
+                                    <li>Подписки по геолокации (страна, город, станция метро, улица)</li>
+                                    <li>Подписки по хэштегам</li>
+                                    <li>Подписки по аккаунтам конкурентов</li>
+                                    <li>Лайки вашим подписчикам 2 раза в месяц (увеличение лояльности к аккаунту)</li>
+                                    <li>Фильтр от ботов, магазинов, людей из других стран</li>
+                                    <li>Ведение вашего аккаунта (размещение контента, продающие описания, хэштеги,
+                                        ответы в комментариях)
+                                    </li>
+                                    <li>Покупка рекламных постов у блоггеров/пабликов в instagram</li>
+                                    <li>Настройка таргетированной рекламы</li>
+                                    <li>
+                                        <a href="#" title="Order" class="btn btn-primary">Заказать</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 video-holder">
+                <h2 class="title title-h2">Что Говорят Те, Кто Уже Получает Клиентов Из Instagram</h2>
+                <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-6 col-lg-offset-0">
+                    <div class="video">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/rZje3MPTfO8" frameborder="0"
+                                allowfullscreen=""></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="sub-title">Карина Почейкалова - дизайнер женского белья</h3>
+                        <p>Карина обратилась к нам не так давно, но результаты
+                            продвижения мы начали видеть практически сразу. Можно
+                            сказать что большую роль тут сыграл сам контент(а именной
+                            очень крутой товар!) и то как Карина ведет свой аккаунт.
+                            Много хороших личных фото и фото товара. В данном случае
+                            аккаунт сам продает! Мы рады что именно нам Карина
+                            доверила продвижение своей страницы в instagram.
+                            С хорошими клиентами очень приятно работать!</p>
+                        <div class="col-md-12 col-lg-6"><i class="icon icon-vk"></i><a href="#" class="share-link">vk.com/internationalek2</a>
+                        </div>
+                        <div class="col-md-12 col-lg-6"><i class="icon icon-insta"></i><a href="#" class="share-link">instagram.com/interK2</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="visible-lg col-lg-6">
+                    <div class="video">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/rZje3MPTfO8" frameborder="0"
+                                allowfullscreen=""></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="sub-title">Карина Почейкалова - дизайнер женского белья</h3>
+                        <p>Карина обратилась к нам не так давно, но результаты
+                            продвижения мы начали видеть практически сразу. Можно
+                            сказать что большую роль тут сыграл сам контент(а именной
+                            очень крутой товар!) и то как Карина ведет свой аккаунт.
+                            Много хороших личных фото и фото товара. В данном случае
+                            аккаунт сам продает! Мы рады что именно нам Карина
+                            доверила продвижение своей страницы в instagram.
+                            С хорошими клиентами очень приятно работать!</p>
+                        <div class="col-sm-6 col-md-6 col-lg-6"><i class="icon icon-vk"></i><a href="#"
+                                                                                               class="share-link">vk.com/internationalek2</a>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6"><i class="icon icon-insta"></i><a href="#"
+                                                                                                  class="share-link">instagram.com/interK2</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container-fluid contacts-holder">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6 form-holder">
+                        <h3 class="title form-title">Остались вопросы?
+                            Наш консультант вам ответит!</h3>
+                        <form action="" class="form-footer form-horizontal-footer col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-group-footer">
+                                <input type="text" placeholder="Имя" class="form-controls-footer">
+                            </div>
+                            <div class="form-group-footer">
+                                <input type="email" placeholder="E-mail" class="form-controls-footer">
+                            </div>
+                            <div class="form-group-footer">
+                                <input type="tel" placeholder="Телефон" class="form-controls-footer">
+                            </div>
+                            <div class="btn-holder">
+                                <a href="#" class="btn btn-primary btn-full-width">Отправить</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 contact-holder">
+                        <h3 class="title title-contact">Контакты</h3>
+                        <p class="contact-data"><i class="icon icon-mail"></i><span class="contact">E-mail:</span><span
+                                class="contact-info">adres@mail.ru</span></p>
+                        <p class="contact-data"><i class="icon icon-tel"></i><span class="contact">Телефон:</span><span
+                                class="contact-info">+7 (234) 657 98 00</span></p>
+                        <p class="contact-data"><i class="icon icon-home"></i><span class="contact">Адрес:</span><span
+                                class="contact-info">ул. &#075;осмонавтов 29.</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-info-holder">
+                        <div class="col-xxs-12 col-xs-5 col-sm-3 col-md-3 col-lg-3 logo-footer">
+                            <div class="logo">
+                                <a href="#"><i class="icon icon-logo"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-xxs-12 col-xs-7 col-sm-5 col-md-5 col-lg-5">
+                            <ul class="info-list">
+                                <li>Политика Конфиденциальности</li>
+                                <li>Согласие с Рассылкой</li>
+                                <li>Отказ от Ответственности</li>
+                            </ul>
+                        </div>
+                        <div class="col-xxs-12 col-xs-12 col-sm-4 col-md-4 col-lg-4 social-holder">
+                            <ul class="social-list">
+                                <li class="col-xs-4 col-sm-4 col-md-4 col-lg-4 social-item"><a class="social-link" href="#"><i
+                                        class="icon icon-insta icon-insta-big"></i></a></li>
+                                <li class="col-xs-4 col-sm-4 col-md-4 col-lg-4 social-item"><a class="social-link" href="#"><i
+                                        class="icon icon-vk icon-vk-big"></i></a></li>
+                                <li class="col-xs-4 col-sm-4 col-md-4 col-lg-4 social-item"><a class="social-link" href="#"><i
+                                        class="icon icon-fb icon-fb-big"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
+
+<div class="hidden"></div>
+<!--[if lt IE 9]>
+<script src="libs/html5shiv/es5-shim.min.js"></script>
+<script src="libs/html5shiv/html5shiv.min.js"></script>
+<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>`
+<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+<!-- Load Scripts Start -->
+<script>
+    var scr = {
+        "scripts": [{
+            "src": "js/libs.js",
+            "async": false
+        }, {
+            "src": "js/common.js",
+            "async": false
+        }]
+    };
+    !function (t, n, r) {
+        "use strict";
+        var c = function (t) {
+            if ("[object Array]" !== Object.prototype.toString.call(t)) return !1;
+            for (var r = 0; r < t.length; r++) {
+                var c = n.createElement("script"),
+                        e = t[r];
+                c.src = e.src, c.async = e.async, n.body.appendChild(c)
+            }
+            return !0
+        };
+        t.addEventListener ? t.addEventListener("load", function () {
+            c(r.scripts);
+        }, !1) : t.attachEvent ? t.attachEvent("onload", function () {
+            c(r.scripts)
+        }) : t.onload = function () {
+            c(r.scripts)
+        }
+    }(window, document, scr);
+</script>
+<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+<!-- Load Scripts End -->
+</body>
+
+</html>
